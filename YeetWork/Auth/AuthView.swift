@@ -47,13 +47,6 @@ struct ChooseAuthView: View {
                             .cornerRadius(30)
                             .padding(.bottom, 25.0)
                         }
-                        
-                        Button(action: {onChangeView(2)}){
-                            Text("Go back")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
-                            
-                        }
             }
         }
         .ignoresSafeArea()
@@ -71,7 +64,7 @@ struct SwitchAuthView: View {
         VStack{
             switch(page){
             case 1:LoginView(onBack: {onChangeView(page_: 0)});
-                case 2:RegistrationView(onBack: {onChangeView(page_: 0)});
+            case 2:RegistrationView(onBack: {onChangeView(page_: 0)});
             default: ChooseAuthView(onChangeView:onChangeView);
             }
         }
