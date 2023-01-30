@@ -19,16 +19,18 @@ struct SwitchSearch: View {
                 selected_category = category
                 page = 1
             }
-            case 1: LocationsView{ location in
+            case 1: LocationsView(onNext:{ location in
                 selected_country = location
                 page = 2
-            }
-            case 2: FreelancersChoice{
+            },onBack: {page = 0})
+            case 2: FreelancersChoice(onChoice: {
                 freelancer in
                 choosen_freelancer = freelancer
                 page = 4
-            }
-            default: FreelancerDetailsView(freelancer: choosen_freelancer)
+            }, onBack: {page = 1})
+        default: FreelancerDetailsView(freelancer: choosen_freelancer, onBack: {
+            page = 2
+        })
         }
     }
 }

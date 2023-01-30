@@ -10,6 +10,7 @@ import SwiftUI
 struct LocationsView: View {
     @State private var selected_country = ""
     @State var onNext: (String) -> Void
+    @State var onBack: () -> Void
     var body: some View {
         VStack {
             Text("Country")
@@ -18,11 +19,12 @@ struct LocationsView: View {
                 .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
                 .multilineTextAlignment(.center)
                 
-                Picker(selection: $selected_country, label: Text("")) {
+                Picker(selection: $selected_country, label: Text("Select")) {
                     ForEach(countries, id: \.self) { country in
                         Text(country)
                         }
                     }
+                .accentColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
                 Spacer()
                 Button(action: {onNext(selected_country)}){
                     Text("Next")
@@ -34,6 +36,14 @@ struct LocationsView: View {
                         .cornerRadius(30)
                         .padding(.bottom, 10.0)
                 }
+                Button(action: onBack){
+                Text("Back")
+                    .fontWeight(.bold)
+                    .padding(.vertical, 20.0)
+                    .padding(.bottom, 10.0)
+                    .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
+            }
+
             
         }
     }
@@ -41,6 +51,6 @@ struct LocationsView: View {
 
 struct LocationsView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationsView(onNext: {location in print("okok")})
+        LocationsView(onNext: {location in print("okok")}, onBack: {print("back")})
     }
 }

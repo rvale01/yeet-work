@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PopularView: View {
     @State var popularFreelancers: [FreelancerDetails]?;
+    @State var onClickFreelancer: (FreelancerDetails) -> Void
     
     var body: some View {
         VStack(alignment: .leading){
@@ -21,7 +22,7 @@ struct PopularView: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
                     ForEach(popularFreelancers ?? [], id: \.self.username){freelancer in
-                        ProfileView(url: freelancer.image)
+                        ProfileView(onClick: {onClickFreelancer(freelancer)}, url: freelancer.image)
                     }
                     .padding([.top, .leading, .bottom], 10.0)
                 }
@@ -34,6 +35,6 @@ struct PopularView: View {
 
 struct PopularView_Previews: PreviewProvider {
     static var previews: some View {
-        PopularView()
+        PopularView(popularFreelancers: [], onClickFreelancer: {freelancer in print("freelancer")})
     }
 }

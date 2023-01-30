@@ -10,11 +10,26 @@ import SwiftUI
 struct FreelancerDetailsView: View {
     @State private var offset = CGFloat(0)
     @State var freelancer: FreelancerDetails?
+    @State var onBack: () -> Void
       
       var body: some View {
         GeometryReader { geometry in
           ZStack{
               VStack{
+                  HStack{
+                      Button(action:onBack) {
+                          Image(systemName: "arrow.left")
+                              .resizable()
+                              .frame(width: 20, height: 20)
+                              .foregroundColor(Color(#colorLiteral(red: 0.9568627451, green: 0.5764705882, blue: 0.3529411765, alpha: 1)))
+                              .clipShape(Circle())
+                      }
+                      Spacer()
+                      Text("Details")
+                          .font(.title).bold()
+                           .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
+                      Spacer()
+                  }
                   AsyncImage(url: freelancer?.image)
                       .frame(width: 150, height: 150)
                       .cornerRadius(100)
@@ -121,6 +136,6 @@ struct FreelancerDetailsView: View {
 
 struct FreelancerDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FreelancerDetailsView()
+        FreelancerDetailsView(onBack: {print("okay")})
     }
 }

@@ -12,6 +12,7 @@ struct FreelancersChoice: View {
     @State private var isLoading = true
     @State private var index: Int = 0
     @State var onChoice: (FreelancerDetails) -> Void
+    @State var onBack: () -> Void
     
     var body: some View {
             VStack(alignment: .center) {
@@ -59,6 +60,13 @@ struct FreelancersChoice: View {
                         }
                         .padding()
                     }
+                
+                    Button(action: onBack){
+                    Text("Back")
+                            .fontWeight(.bold)
+                            .padding(.bottom, 10.0)
+                            .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
+                    }
                     
                     HStack(spacing: 100) {
                         Button(action: {
@@ -84,7 +92,7 @@ struct FreelancersChoice: View {
                                 .clipShape(Circle())
                                 .foregroundColor(Color(#colorLiteral(red: 0.9568627451, green: 0.5764705882, blue: 0.3529411765, alpha: 1)))
                         }
-                    }
+                    }.padding(.bottom, 10.0)
             }
             .onAppear {
                 print("Ok")
@@ -98,6 +106,6 @@ struct FreelancersChoice: View {
 
 struct FreelancersChoice_Previews: PreviewProvider {
     static var previews: some View {
-        FreelancersChoice(onChoice: {freelancer in print("okok")})
+        FreelancersChoice(onChoice: {freelancer in print("okok")}, onBack: {print("back")})
     }
 }

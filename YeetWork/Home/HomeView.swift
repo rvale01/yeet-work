@@ -9,21 +9,26 @@ import SwiftUI
 
 
 struct ProfileView: View {
+    @State var onClick: () -> Void
     var url: URL;
     var body: some View {
-        AsyncImage(url: url){ res in
-            res.image?
-                .resizable()
+        Button(action: onClick){
+            AsyncImage(url: url){ res in
+                res.image?
+                    .resizable()
                 
-        }
+            }
             .frame(width: 100, height: 100)
             .cornerRadius(50)
+        }
     }
 }
 
 struct HomeView: View {
     @State private var data: HomeInitData?
     @State private var isLoading = true
+    @State private var showDetails = false
+    @State private var freelancer: FreelancerDetails?
     
     var body: some View {
         ZStack{
@@ -31,20 +36,32 @@ struct HomeView: View {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle())
             }else{
-                VStack{
-                    Text("Home")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
-                        .multilineTextAlignment(.center)
-                    Spacer()
-                    PopularView(popularFreelancers: data?.most_popular)
-                    Spacer()
-                    ListBoxesView(title: "Highest ratings", freelancers: data?.highest_ratings)
-                    Spacer()
-                    ListBoxesView(title: "Verified users", freelancers: data?.verified_users)
-                    Spacer()
-                    Spacer()
+                if(showDetails){
+                    FreelancerDetailsView(freelancer: freelancer, onBack: {
+                        showDetails = false
+                    })
+                }
+                else {
+                        VStack{
+                            Text("Home")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(red: 0.2901960784313726, green: 0.2901960784313726, blue: 0.2901960784313726))
+                                .multilineTextAlignment(.center)
+                            Spacer()
+                            PopularView(popularFreelancers: data?.most_popular)
+                            {
+                                freelancerDetails in
+                                freelancer = freelancerDetails
+                                showDetails = true
+                            }
+                            Spacer()
+                            ListBoxesView(title: "Highest ratings", freelancers: data?.highest_ratings)
+                            Spacer()
+                            ListBoxesView(title: "Verified users", freelancers: data?.verified_users)
+                            Spacer()
+                            Spacer()
+                        }
                 }
             }
         }.onAppear {
