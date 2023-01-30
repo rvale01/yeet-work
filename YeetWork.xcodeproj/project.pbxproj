@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1700F9CB294B972A00FB11F9 /* IntroductionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1700F9CA294B972A00FB11F9 /* IntroductionViewModel.swift */; };
 		17180BB6292FBAF700882FA2 /* YeetWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17180BB5292FBAF700882FA2 /* YeetWorkApp.swift */; };
-		17180BB8292FBAF700882FA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17180BB7292FBAF700882FA2 /* ContentView.swift */; };
 		17180BBA292FBAFA00882FA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17180BB9292FBAFA00882FA2 /* Assets.xcassets */; };
 		17180BBD292FBAFA00882FA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17180BBC292FBAFA00882FA2 /* Preview Assets.xcassets */; };
 		17180BC7292FBAFA00882FA2 /* YeetWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17180BC6292FBAFA00882FA2 /* YeetWorkTests.swift */; };
 		17180BD1292FBAFA00882FA2 /* YeetWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17180BD0292FBAFA00882FA2 /* YeetWorkUITests.swift */; };
 		17180BD3292FBAFA00882FA2 /* YeetWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17180BD2292FBAFA00882FA2 /* YeetWorkUITestsLaunchTests.swift */; };
+		17185A192980765A00155EB9 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17185A182980765A00155EB9 /* BottomBarView.swift */; };
+		1729F01A298587770008AF71 /* SearchFreelancerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729F019298587770008AF71 /* SearchFreelancerModel.swift */; };
+		1729F01C298588A20008AF71 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729F01B298588A20008AF71 /* CategoriesView.swift */; };
+		1729F01E29858F9A0008AF71 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729F01D29858F9A0008AF71 /* LocationsView.swift */; };
+		1729F020298593EF0008AF71 /* SwitchSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729F01F298593EF0008AF71 /* SwitchSearch.swift */; };
+		1729F0222986A8F90008AF71 /* FreelancersChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729F0212986A8F90008AF71 /* FreelancersChoice.swift */; };
+		173B067B2986B01100FA5EA4 /* FreelancersChoiceModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B067A2986B01100FA5EA4 /* FreelancersChoiceModelView.swift */; };
+		173B067D2987018600FA5EA4 /* FreelancerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B067C2987018600FA5EA4 /* FreelancerDetails.swift */; };
+		177BA951296F808A0070A328 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 177BA950296F80890070A328 /* GoogleService-Info.plist */; };
+		177BA954296F822E0070A328 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 177BA953296F822E0070A328 /* FirebaseAuth */; };
+		177BA957296F83710070A328 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177BA956296F83710070A328 /* AuthView.swift */; };
+		177BA959296F83B40070A328 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177BA958296F83B40070A328 /* AuthViewModel.swift */; };
+		177BA95C2970215F0070A328 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177BA95B2970215F0070A328 /* HomeView.swift */; };
+		177BA95F29702EF50070A328 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177BA95E29702EF50070A328 /* AccountView.swift */; };
+		17A2621C2983366F001041CB /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2621B2983366F001041CB /* BoxView.swift */; };
+		17A2621E2983371B001041CB /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2621D2983371B001041CB /* PopularView.swift */; };
+		17A262202983374C001041CB /* ListBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2621F2983374C001041CB /* ListBoxesView.swift */; };
+		17A2622229833B8C001041CB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2622129833B8C001041CB /* HomeViewModel.swift */; };
+		17A2622429833E9C001041CB /* ApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2622329833E9C001041CB /* ApiResponseModel.swift */; };
+		17E093752942861900A85D9C /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E093742942861800A85D9C /* IntroductionView.swift */; };
+		17F22EDD297B60C400FB1CEE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F22EDC297B60C400FB1CEE /* LoginView.swift */; };
+		17F22EDF297B60F700FB1CEE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F22EDE297B60F700FB1CEE /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1700F9CA294B972A00FB11F9 /* IntroductionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewModel.swift; sourceTree = "<group>"; };
 		17180BB2292FBAF700882FA2 /* YeetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17180BB5292FBAF700882FA2 /* YeetWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeetWorkApp.swift; sourceTree = "<group>"; };
-		17180BB7292FBAF700882FA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17180BB9292FBAFA00882FA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17180BBC292FBAFA00882FA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17180BC2292FBAFA00882FA2 /* YeetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +66,27 @@
 		17180BCC292FBAFA00882FA2 /* YeetWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeetWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17180BD0292FBAFA00882FA2 /* YeetWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeetWorkUITests.swift; sourceTree = "<group>"; };
 		17180BD2292FBAFA00882FA2 /* YeetWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeetWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17185A182980765A00155EB9 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		1729F019298587770008AF71 /* SearchFreelancerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFreelancerModel.swift; sourceTree = "<group>"; };
+		1729F01B298588A20008AF71 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		1729F01D29858F9A0008AF71 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		1729F01F298593EF0008AF71 /* SwitchSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSearch.swift; sourceTree = "<group>"; };
+		1729F0212986A8F90008AF71 /* FreelancersChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelancersChoice.swift; sourceTree = "<group>"; };
+		173B067A2986B01100FA5EA4 /* FreelancersChoiceModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelancersChoiceModelView.swift; sourceTree = "<group>"; };
+		173B067C2987018600FA5EA4 /* FreelancerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelancerDetails.swift; sourceTree = "<group>"; };
+		177BA950296F80890070A328 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		177BA956296F83710070A328 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		177BA958296F83B40070A328 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		177BA95B2970215F0070A328 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		177BA95E29702EF50070A328 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		17A2621B2983366F001041CB /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
+		17A2621D2983371B001041CB /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		17A2621F2983374C001041CB /* ListBoxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBoxesView.swift; sourceTree = "<group>"; };
+		17A2622129833B8C001041CB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		17A2622329833E9C001041CB /* ApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModel.swift; sourceTree = "<group>"; };
+		17E093742942861800A85D9C /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		17F22EDC297B60C400FB1CEE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		17F22EDE297B60F700FB1CEE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177BA954296F822E0070A328 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1700F9C9294B970300FB11F9 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				17E093742942861800A85D9C /* IntroductionView.swift */,
+				1700F9CA294B972A00FB11F9 /* IntroductionViewModel.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
 		17180BA9292FBAF600882FA2 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +147,14 @@
 		17180BB4292FBAF700882FA2 /* YeetWork */ = {
 			isa = PBXGroup;
 			children = (
+				1729F018298587510008AF71 /* SearchFreelancer */,
+				17185A172980763B00155EB9 /* BottomBar */,
+				177BA95D29702ECC0070A328 /* Account */,
+				177BA95A2970213D0070A328 /* Home */,
+				177BA955296F834B0070A328 /* Auth */,
+				177BA950296F80890070A328 /* GoogleService-Info.plist */,
+				1700F9C9294B970300FB11F9 /* Introduction */,
 				17180BB5292FBAF700882FA2 /* YeetWorkApp.swift */,
-				17180BB7292FBAF700882FA2 /* ContentView.swift */,
 				17180BB9292FBAFA00882FA2 /* Assets.xcassets */,
 				17180BBB292FBAFA00882FA2 /* Preview Content */,
 			);
@@ -127,6 +186,60 @@
 			path = YeetWorkUITests;
 			sourceTree = "<group>";
 		};
+		17185A172980763B00155EB9 /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				17185A182980765A00155EB9 /* BottomBarView.swift */,
+			);
+			path = BottomBar;
+			sourceTree = "<group>";
+		};
+		1729F018298587510008AF71 /* SearchFreelancer */ = {
+			isa = PBXGroup;
+			children = (
+				1729F019298587770008AF71 /* SearchFreelancerModel.swift */,
+				1729F01B298588A20008AF71 /* CategoriesView.swift */,
+				1729F01D29858F9A0008AF71 /* LocationsView.swift */,
+				1729F01F298593EF0008AF71 /* SwitchSearch.swift */,
+				1729F0212986A8F90008AF71 /* FreelancersChoice.swift */,
+				173B067C2987018600FA5EA4 /* FreelancerDetails.swift */,
+				173B067A2986B01100FA5EA4 /* FreelancersChoiceModelView.swift */,
+			);
+			path = SearchFreelancer;
+			sourceTree = "<group>";
+		};
+		177BA955296F834B0070A328 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				177BA956296F83710070A328 /* AuthView.swift */,
+				17F22EDE297B60F700FB1CEE /* RegistrationView.swift */,
+				177BA958296F83B40070A328 /* AuthViewModel.swift */,
+				17F22EDC297B60C400FB1CEE /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		177BA95A2970213D0070A328 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				177BA95B2970215F0070A328 /* HomeView.swift */,
+				17A2622129833B8C001041CB /* HomeViewModel.swift */,
+				17A2621F2983374C001041CB /* ListBoxesView.swift */,
+				17A2621B2983366F001041CB /* BoxView.swift */,
+				17A2621D2983371B001041CB /* PopularView.swift */,
+				17A2622329833E9C001041CB /* ApiResponseModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		177BA95D29702ECC0070A328 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				177BA95E29702EF50070A328 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +256,9 @@
 			dependencies = (
 			);
 			name = YeetWork;
+			packageProductDependencies = (
+				177BA953296F822E0070A328 /* FirebaseAuth */,
+			);
 			productName = YeetWork;
 			productReference = 17180BB2292FBAF700882FA2 /* YeetWork.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +331,9 @@
 				Base,
 			);
 			mainGroup = 17180BA9292FBAF600882FA2;
+			packageReferences = (
+				177BA952296F822E0070A328 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 17180BB3292FBAF700882FA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +352,7 @@
 			files = (
 				17180BBD292FBAFA00882FA2 /* Preview Assets.xcassets in Resources */,
 				17180BBA292FBAFA00882FA2 /* Assets.xcassets in Resources */,
+				177BA951296F808A0070A328 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +377,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17180BB8292FBAF700882FA2 /* ContentView.swift in Sources */,
+				177BA959296F83B40070A328 /* AuthViewModel.swift in Sources */,
+				173B067B2986B01100FA5EA4 /* FreelancersChoiceModelView.swift in Sources */,
+				177BA957296F83710070A328 /* AuthView.swift in Sources */,
+				177BA95C2970215F0070A328 /* HomeView.swift in Sources */,
+				17185A192980765A00155EB9 /* BottomBarView.swift in Sources */,
+				17F22EDF297B60F700FB1CEE /* RegistrationView.swift in Sources */,
+				17E093752942861900A85D9C /* IntroductionView.swift in Sources */,
+				1729F01C298588A20008AF71 /* CategoriesView.swift in Sources */,
+				177BA95F29702EF50070A328 /* AccountView.swift in Sources */,
+				1729F01A298587770008AF71 /* SearchFreelancerModel.swift in Sources */,
 				17180BB6292FBAF700882FA2 /* YeetWorkApp.swift in Sources */,
+				17A2622429833E9C001041CB /* ApiResponseModel.swift in Sources */,
+				17F22EDD297B60C400FB1CEE /* LoginView.swift in Sources */,
+				17A2622229833B8C001041CB /* HomeViewModel.swift in Sources */,
+				1700F9CB294B972A00FB11F9 /* IntroductionViewModel.swift in Sources */,
+				17A2621E2983371B001041CB /* PopularView.swift in Sources */,
+				1729F01E29858F9A0008AF71 /* LocationsView.swift in Sources */,
+				17A262202983374C001041CB /* ListBoxesView.swift in Sources */,
+				1729F020298593EF0008AF71 /* SwitchSearch.swift in Sources */,
+				173B067D2987018600FA5EA4 /* FreelancerDetails.swift in Sources */,
+				17A2621C2983366F001041CB /* BoxView.swift in Sources */,
+				1729F0222986A8F90008AF71 /* FreelancersChoice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +723,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		177BA952296F822E0070A328 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		177BA953296F822E0070A328 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 177BA952296F822E0070A328 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17180BAA292FBAF600882FA2 /* Project object */;
 }

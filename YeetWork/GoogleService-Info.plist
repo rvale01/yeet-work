@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>968149667258-att502pgrsi0m9698c2r088td0laakte.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.968149667258-att502pgrsi0m9698c2r088td0laakte</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD3qtC3YcjEtw3Jqnv9hyag6g7cbzUkzQk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>968149667258</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>valentina.ronchi.YeetWork</string>
+	<key>PROJECT_ID</key>
+	<string>freelancemeet-9bc6a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>freelancemeet-9bc6a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:968149667258:ios:e41db8305d41d835cba183</string>
+</dict>
+</plist>
