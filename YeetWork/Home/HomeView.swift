@@ -24,6 +24,12 @@ struct ProfileView: View {
     }
 }
 
+// When this view is opened, it will fetch all the data from the api.
+// While that is happening, a spinner is shown.
+
+// This view shows the freelancers split into three categories.
+// When clicking on any of them, the details of that freelancer are displayed.
+
 struct HomeView: View {
     @State private var data: HomeInitData?
     @State private var isLoading = true
@@ -56,9 +62,17 @@ struct HomeView: View {
                                 showDetails = true
                             }
                             Spacer()
-                            ListBoxesView(title: "Highest ratings", freelancers: data?.highest_ratings)
+                            ListBoxesView(title: "Highest ratings", freelancers: data?.highest_ratings, onFreelancerClick: {
+                                freelancerDetails in
+                                freelancer = freelancerDetails
+                                showDetails = true
+                            })
                             Spacer()
-                            ListBoxesView(title: "Verified users", freelancers: data?.verified_users)
+                            ListBoxesView(title: "Verified users", freelancers: data?.verified_users, onFreelancerClick: {
+                                freelancerDetails in
+                                freelancer = freelancerDetails
+                                showDetails = true
+                            })
                             Spacer()
                             Spacer()
                         }

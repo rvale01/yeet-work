@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// A box with a title and two subtitles.
 struct BoxView: View {
     var title: String;
     var subtitle1: String;

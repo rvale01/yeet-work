@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+// This view will show the freelancers. When the page loads, the api to get the freelancers is called.
+// The first freelancer to be shown is the first of the list. When the user clicks on the cross icon, the next freelancer in the list will be shown.
+// If the freelancer clicks on the tick, the details of the freelancer will be shown.
+
+// The view expects as parameters: the onChoice function and the onBack.
+// The onChoice function will show the details of a given freelancer
 struct FreelancersChoice: View {
     @State private var data: [FreelancerDetails]?
     @State private var isLoading = true

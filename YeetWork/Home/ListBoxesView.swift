@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+// A scroll view which loops trough all the freelancers and shows
+// each of them in a box (BoxView). The box is clickable, so when clicking on the box
+// the onFreelancerClick is called.
+
 struct ListBoxesView: View {
     @State var title: String
     @State var freelancers: [FreelancerDetails]?
+    @State var onFreelancerClick: (FreelancerDetails) -> Void
 
     var body: some View{
         VStack(alignment: .leading){
@@ -20,13 +25,14 @@ struct ListBoxesView: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(spacing: 20){
                     ForEach(freelancers ?? [], id: \.self.username){ freelancer in
-                        BoxView(
-                            title: "@"+freelancer.username,
-                            subtitle1: String(freelancer.average_stars) + " stars (" + String(freelancer.reviews_no) + ")",
-                            subtitle2: freelancer.title
-                        )
+                        Button(action: {onFreelancerClick(freelancer)}){
+                            BoxView(
+                                title: "@"+freelancer.username,
+                                subtitle1: String(freelancer.average_stars) + " stars (" + String(freelancer.reviews_no) + ")",
+                                subtitle2: freelancer.title
+                            )
                             .padding([.top, .leading, .bottom], 10.0)
-                        
+                        }
                     }
                     
                 }
@@ -37,6 +43,6 @@ struct ListBoxesView: View {
 
 struct HighestRatingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ListBoxesView(title: "View")
+        ListBoxesView(title: "View", onFreelancerClick: {freelancer in print("Ok")})
     }
 }

@@ -16,6 +16,7 @@ struct PersonalImageView: View {
     }
 }
 
+// This view shows an image with the logout button
 struct AccountView: View {
     @EnvironmentObject private var userViewModel: UserViewModel
     

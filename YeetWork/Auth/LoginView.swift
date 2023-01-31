@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// View used by the user to login
 struct LoginView: View {
     var onBack: () -> Void;
     

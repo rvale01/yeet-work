@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+// This view allows the user to choose any location they want.
+// This view displays a picker where the user can choose one of the avilable countries
+// By clicking on the next button, the onNext function is called, where the country is passed. This will switch the screen showed.
+
+// The view accepts as paramter the onNext function and the onBackFunction
+
+
 struct LocationsView: View {
     @State private var selected_country = ""
     @State var onNext: (String) -> Void

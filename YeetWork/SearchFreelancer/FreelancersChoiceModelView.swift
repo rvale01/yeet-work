@@ -7,6 +7,7 @@
 
 import Foundation
 
+// This function will get all the freelancers in the api, decode them and return them on completion
 func getFreelancers(completion: @escaping (Any) -> ()) {
         URLSession.shared.dataTask(with: URL(string: "https://mob-app-be.vercel.app/all-users")!) {
             (data, _, error) in

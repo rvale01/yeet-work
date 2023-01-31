@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Model which is used to decode the api response
 struct Review: Decodable {
     let image: URL
     let username: String

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// function which calls the api when the homepage loads
 func getInitData(completion: @escaping (Any) -> ()) {
         URLSession.shared.dataTask(with: URL(string: "https://mob-app-be.vercel.app/home-page-data")!) {
             (data, _, error) in

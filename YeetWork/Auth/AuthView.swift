@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseCore
 import FirebaseAuth
 
+// This view allows the user to choose if they want to login or to register.
 struct ChooseAuthView: View {
     var onChangeView: (Int) -> Void;
     
@@ -54,6 +55,7 @@ struct ChooseAuthView: View {
 
 }
 
+// This view contains just a switch between the login view, the registration view and the choose auth view
 struct SwitchAuthView: View {
     @State private var page: Int = 0;
     

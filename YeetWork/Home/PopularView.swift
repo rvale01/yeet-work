@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-
+// A scroll view which loops trough all the freelancers
+// (popularFreelancers) and for each of them it shows an image (based on the url). When clicking on the image, the onClickFreelancer will be called.
 struct PopularView: View {
     @State var popularFreelancers: [FreelancerDetails]?;
     @State var onClickFreelancer: (FreelancerDetails) -> Void

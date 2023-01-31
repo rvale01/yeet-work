@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// This view shows the details of a given freelancer.
+// This view has a container which is showed when swiping up.
+// Inside this view there is a button with will open the fiverr page of the freelancer.
+
+// The view accepts as parameter the freelancer and the onBack function.
 struct FreelancerDetailsView: View {
     @State private var offset = CGFloat(0)
     @State var freelancer: FreelancerDetails?

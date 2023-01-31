@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+// This view allows the user to choose any category they want.
+// The categories are wrapped is wrapped inside a ScrollView to allow scrolling when they exceed the screen space
+// by clicking each category, a the onSelect is called, where the category is passed. This action will switch screen to be displayed
+
+// The view accepts as paramter the onSelect function
+
 struct CategoriesView: View {
     @State var onSelect: (String) -> Void
     

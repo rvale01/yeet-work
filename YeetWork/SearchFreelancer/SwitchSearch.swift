@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// This view contains a switch between the diffferent pages of the search features
+// For each view is passed a function which will show the next page
+// Except for the first view, to the other views it is being passed also a function which will show the previous page
 struct SwitchSearch: View {
     @State var page: Int = 0
     @State var selected_category: String = ""

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Inputs which are used by the user to register 
 struct RegistrationView: View {
     var onBack: () -> Void;
     

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// This view contains the tab of the app. When a page is not shown, the text under the icon is not shown as well.
 struct BottomBar: View {
     @State private var selectedTab = 0
     init() {
