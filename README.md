@@ -28,3 +28,6 @@ The Freelancer App provides the following features to its users:
 - Logout: Users can log out of the app at any time.
 - Search: Clients can search for freelancers 
 
+<h3>Video recording</h3>
+If you want, you can access it with this link: https://gitlab.uwe.ac.uk/v2-ronchi/mobile-app/-/raw/main/Mobile
+![Alt text](https://gitlab.uwe.ac.uk/v2-ronchi/mobile-app/-/raw/main/Mobile app video presentation.mov "Mobile app video presentation")
