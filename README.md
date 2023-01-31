@@ -32,5 +32,7 @@ The Freelancer App provides the following features to its users:
 https://gitlab.uwe.ac.uk/v2-ronchi/mobile-app
 
 <h3>Video recording</h3>
-If you want, you can access it with this link: https://gitlab.uwe.ac.uk/v2-ronchi/mobile-app/-/blob/main/Mobile%20app%20video%20presentation.mov
+If you want, you can access it with this link: https://gitlab.uwe.ac.uk/v2-ronchi/mobile-app/-/blob/mainMobile%20app%20video%20presentation.mov
+
+
 ![Alt text](https://gitlab.uwe.ac.uk/v2-ronchi/mobile-app/-/raw/main/Mobile app video presentation.mov "Mobile app video presentation")
